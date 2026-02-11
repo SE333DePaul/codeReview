@@ -11,7 +11,10 @@ public class Review2 {
         d.height = height;
         d.width = width;
     }
-    public synchronized Dimension getValues() {
-        return d;
+    public synchronized int getHeight() {
+        return d.height;
+    }
+    public synchronized int getWidth() {
+        return d.width;
     }
 }
