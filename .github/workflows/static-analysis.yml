@@ -8,6 +8,6 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '23'
+          java-version: '25'
       - name: Maven verify (Checkstyle + SpotBugs)
         run: mvn -q -B -DskipTests verify
